@@ -127,9 +127,9 @@ You can deploy this project using:
 
 👤 Austin Obimbo
 
-- GitHub: [@tasnimchy96](https://github.com/tasnimchy96)
-- Twitter:[@tasnimchy96](https://twitter.com/tasnimchy96)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tasnim-ahmed-chowdhury-b4504625b)
+- GitHub: [Austin Obimbo](https://github.com/Obimbo07)
+- Twitter:[Austine](https://twitter.com/austsine_)
+- LinkedIn: [Austin Obimbo](https://www.linkedin.com/in/austin-obimbo-9a613623a/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
