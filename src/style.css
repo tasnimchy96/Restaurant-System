@@ -4,11 +4,31 @@
   margin: 0;
 }
 
-h1 {
-  color: blueviolet;
-  margin: 100px  600px;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #f06d26;
+  color: #fff;
 }
 
-h1:hover {
-  color: black;
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-section {
+  min-width: 223px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f06d26;
+  color: #fff;
+  text-align: center;
 }
