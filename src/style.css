@@ -4,11 +4,20 @@
   margin: 0;
 }
 
-h1 {
-  color: blueviolet;
-  margin: 100px  600px;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #603B2A;
 }
 
-h1:hover {
-  color: black;
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-section {
+  min-width: 223px;
 }
