@@ -8,7 +8,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #603B2A;
+  background-color: #f06d26;
+  color: #fff;
 }
 
 .nav-bar {
@@ -20,4 +21,14 @@ header {
 
 .nav-section {
   min-width: 223px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f06d26;
+  color: #fff;
+  text-align: center;
 }
