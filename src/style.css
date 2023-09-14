@@ -68,7 +68,6 @@ footer {
   background-color: orange;
   overflow: hidden;
   overflow-y: scroll;
-  height: 100vh;
 }
 
 #pop-up::-webkit-scrollbar {
@@ -107,8 +106,8 @@ img {
   flex-direction: column;
   gap: 10px;
   justify-content: flex-start;
-align-content: flex-start;
-flex-wrap: wrap;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 
 input {
@@ -116,7 +115,7 @@ input {
   padding: 5px;
   font-weight: 700;
   width: 370px;
-  height:300px;
+  height: 300px;
 }
 
 #comment-btn {
@@ -145,8 +144,7 @@ input {
 .show-comment::-webkit-scrollbar-thumb {
   background-color: rgb(122, 93, 93);
   outline: 1px solid slategrey;
-    border-radius: 10px;
-
+  border-radius: 10px;
 }
 
 .show-comment > li {

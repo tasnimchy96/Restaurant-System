@@ -1,13 +1,13 @@
-import loadDescription from "./loadDescription";
+import loadDescription from './loadDescription.js';
 
 const listItems = async () => {
-  const listURL = "https://www.themealdb.com/api/json/v1/1/categories.php";
+  const listURL = 'https://www.themealdb.com/api/json/v1/1/categories.php';
   const response = await fetch(listURL);
   const { categories } = await response.json();
-  const listDisplay = document.getElementById("menu-items");
+  const listDisplay = document.getElementById('menu-items');
   categories.forEach((category) => {
-    const listItem = document.createElement("Div");
-    listItem.classList.add("menu-item");
+    const listItem = document.createElement('Div');
+    listItem.classList.add('menu-item');
     listItem.innerHTML = `
     <div class='meal-img'>
       <h2 class='category-name'>${category.strCategory}</h2>
@@ -24,8 +24,8 @@ const listItems = async () => {
     `;
 
     // Add an event listener to the button
-    const button = listItem.querySelector(".btn");
-    button.addEventListener("click", ()=>{
+    const button = listItem.querySelector('.btn');
+    button.addEventListener('click', () => {
       loadDescription(category.idCategory);
     });
 
