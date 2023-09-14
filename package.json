@@ -33,6 +33,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "init": "^0.1.2",
     "lodash": "^4.17.21"
   }
