@@ -54,16 +54,20 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Added index.html file.
-- Added style.css file.
-- Added javascript file.
-- Added check errors with linters
-- Added webpack package
+- [Use webpack]
+- [Use Gitflow]
+- [Use wireframe for design]
+- [Use API to manage show display]
+- [Display shows]
+- [Like shows]
+- [Comment on show]
+- [Get number of likes]
+- [Get number of comments]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://tasnimchy96.github.io/Restaurant-System/dist/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
