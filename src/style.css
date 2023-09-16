@@ -61,7 +61,7 @@ footer {
 /* pop-up */
 
 #pop-up {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -69,10 +69,12 @@ footer {
   margin: auto;
   width: 30%;
   padding: 10px;
-  height: 50vh;
+  height: 70vh;
   background-color: orange;
   overflow: hidden;
   overflow-y: scroll;
+  border: 5px solid #000;
+  border-radius: 15px;
 }
 
 #pop-up::-webkit-scrollbar {
@@ -86,6 +88,7 @@ footer {
 #pop-up::-webkit-scrollbar-thumb {
   background-color: rgb(122, 93, 93);
   outline: 1px solid slategrey;
+  border-radius: 10px;
 }
 
 #pop-up-image {
@@ -149,7 +152,7 @@ input {
 .show-comment::-webkit-scrollbar-thumb {
   background-color: rgb(122, 93, 93);
   outline: 1px solid slategrey;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .show-comment > li {
