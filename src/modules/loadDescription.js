@@ -9,9 +9,11 @@ const loadDescription = async (id) => {
   );
   const response = await fetch(request);
   const data = await response.json();
-  popUp.innerHTML = `<div class="pop-up-image"><img src="${
-    data.categories[id - 1].strCategoryThumb
-  }" alt="" /></div>
+  popUp.innerHTML = `
+  <button class="close-button" id="closeButton">&times;</button>
+  <div class="pop-up-image"><img src="${
+  data.categories[id - 1].strCategoryThumb
+}" alt="" /></div>
       <div class="pop-up-details">
         <div>
           <h2>Description</h2>
@@ -36,5 +38,12 @@ const loadDescription = async (id) => {
   commentsCount(data.categories[id - 1].idCategory);
   displayComments(data.categories[id - 1].idCategory);
 };
+
+// const closeButton = document.getElementById("closeButton");
+// const popUp = document.querySelector("#pop-up");
+// closeButton.addEventListener("click", () => {
+//   //  loadDescription(category.idCategory);
+//   popUp.style.display = "none";
+// });
 
 export default loadDescription;

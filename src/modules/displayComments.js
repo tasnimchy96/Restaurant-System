@@ -30,6 +30,13 @@ popupContainer.addEventListener('click', async (event) => {
     displayComments(event.target.id);
     commentsCount(event.target.id);
   }
+
+  const closeButton = document.querySelector('#closeButton');
+  const popUp = document.querySelector('#pop-up');
+
+  closeButton.addEventListener('click', () => {
+    popUp.style.display = 'none';
+  });
 });
 
 export default displayComments;
