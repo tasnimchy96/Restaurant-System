@@ -1,12 +1,14 @@
 import loadDescription from './loadDescription.js';
-// import { toggleDisplay } from './popUp.js';
+import displayLikes from './displaylikes.js';
 
+const listURL = 'https://www.themealdb.com/api/json/v1/1/categories.php';
+let categoryId = 0;
 const listItems = async () => {
-  const listURL = 'https://www.themealdb.com/api/json/v1/1/categories.php';
   const response = await fetch(listURL);
   const { categories } = await response.json();
   const listDisplay = document.getElementById('menu-items');
-  categories.forEach((category) => {
+
+  categories.forEach(async (category) => {
     const listItem = document.createElement('Div');
     listItem.classList.add('menu-item');
     listItem.innerHTML = `
@@ -17,13 +19,17 @@ const listItems = async () => {
        </div>
        <div class='btn-container'>
         <button class='btn' id='${category.idCategory}' >Comments</button>
-        <i id="like-icon" class="fas fa-heart" aria-hidden='true'></i>
-        <span id="like-count" class="likes">0 Likes</span>
+        <div id='${category.idCategory}" class='likes-count">
+        <i id="${category.idCategory}" class="fas fa-heart like-icon" aria-hidden='true'></i>
+        <p id="like-count-${category.idCategory}"></p>
+        </div>
         </div>
         
      </div> 
     `;
-
+    // eslint-disable-next-line radix
+    categoryId = parseInt(category.idCategory);
+    displayLikes(categoryId);
     // Add an event listener to the button
     const popUp = document.querySelector('#pop-up');
     const button = listItem.querySelector('.btn');
