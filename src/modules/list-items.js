@@ -1,4 +1,5 @@
 import loadDescription from './loadDescription.js';
+// import { toggleDisplay } from './popUp.js';
 
 const listItems = async () => {
   const listURL = 'https://www.themealdb.com/api/json/v1/1/categories.php';
@@ -30,6 +31,7 @@ const listItems = async () => {
     });
 
     listDisplay.appendChild(listItem);
+    // toggleDisplay(category.idCategory);
   });
 };
 
