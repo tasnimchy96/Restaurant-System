@@ -20,6 +20,7 @@ const handleLikeBtn = () => {
   menuItems.addEventListener('click', async (event) => {
     if (event.target.classList.contains('like-icon')) {
       const parentID = parseInt(event.target.id, 10);
+      event.target.style.color = 'red';
       await postLikes(parentID);
       await displayLikes(parentID);
     }

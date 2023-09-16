@@ -1,8 +1,9 @@
 import loadDescription from './loadDescription.js';
 import displayLikes from './displaylikes.js';
 
+const listURL = 'https://www.themealdb.com/api/json/v1/1/categories.php';
+let categoryId = 0;
 const listItems = async () => {
-  const listURL = 'https://www.themealdb.com/api/json/v1/1/categories.php';
   const response = await fetch(listURL);
   const { categories } = await response.json();
   const listDisplay = document.getElementById('menu-items');
@@ -26,7 +27,9 @@ const listItems = async () => {
         
      </div> 
     `;
-    displayLikes(category.idCategory);
+    // eslint-disable-next-line radix
+    categoryId = parseInt(category.idCategory);
+    displayLikes(categoryId);
     // Add an event listener to the button
     const button = listItem.querySelector('.btn');
     button.addEventListener('click', () => {
