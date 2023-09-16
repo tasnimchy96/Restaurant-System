@@ -31,12 +31,15 @@ const listItems = async () => {
     categoryId = parseInt(category.idCategory);
     displayLikes(categoryId);
     // Add an event listener to the button
+    const popUp = document.querySelector('#pop-up');
     const button = listItem.querySelector('.btn');
     button.addEventListener('click', () => {
       loadDescription(category.idCategory);
+      popUp.style.display = 'block';
     });
 
     listDisplay.appendChild(listItem);
+    // toggleDisplay(category.idCategory);
   });
 };
 
